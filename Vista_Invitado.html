@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Invitado</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .guest-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #673AB7; 
+            margin-bottom: 20px;
+        }
+
+        .info-section {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #E6E6E6;
+            padding-bottom: 20px;
+        }
+
+        .info-section:last-child {
+            border-bottom: none;
+        }
+
+        .info-item {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .event-preview {
+            margin-top: 20px;
+        }
+
+        .event-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .event-list-item {
+            background-color: #E6F7F5;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-title {
+            font-weight: bold;
+            color: #4CAF50; 
+        }
+
+        .event-date {
+            color: #673AB7;
+        }
+
+        .event-button {
+            background-color: #673AB7;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="guest-container">
+            <h2>Bienvenido Invitado</h2>
+            <div class="info-section">
+                <h3>Información Pública</h3>
+                <div class="info-item">
+                    <strong>Nombre:</strong> Usuario Invitado
+                </div>
+                <div class="info-item">
+                    <strong>Acceso:</strong> Limitado a vista previa de eventos
+                </div>
+            </div>
+
+            <div class="info-section event-preview">
+                <h3>Próximos Eventos</h3>
+                <ul class="event-list">
+                    <li class="event-list-item">
+                        <div class="event-title">Limpieza de Playa</div>
+                        <div class="event-date">Fecha: 2024-12-10</div>
+                        <button class="event-button" onclick="alert('¡Inicia sesión para unirte a este evento!')">Unirse</button>
+                    </li>
+                    <li class="event-list-item">
+                        <div class="event-title">Charla Ambiental</div>
+                        <div class="event-date">Fecha: 2024-12-15</div>
+                        <button class="event-button" onclick="alert('¡Inicia sesión para unirte a este evento!')">Unirse</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
